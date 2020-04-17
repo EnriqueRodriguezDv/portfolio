@@ -1,0 +1,52 @@
+.header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects, .header {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  outline: 1px solid red;
+}
+.header .header__top {
+  outline: 1px solid hotpink;
+  width: inherit;
+  max-width: inherit;
+  height: 60px;
+  justify-content: space-between;
+}
+.header .header__top .header__top__figure {
+  outline: 1px solid indigo;
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+.header .header__top .header__top__figure .header__top__figure--logo {
+  width: 100%;
+  height: 100%;
+}
+.header .header__top .header__top__nav {
+  margin-right: 10px;
+  list-style: none;
+}
+.header .header__top .header__top__nav .header__top__nav__li a {
+  text-decoration: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.projects {
+  outline: 1px solid green;
+}
+
+/*# sourceMappingURL=style.css.map */
