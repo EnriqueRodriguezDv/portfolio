@@ -1,4 +1,4 @@
-.header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top {
+.header .header__body, .header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,6 +43,16 @@
   text-decoration: none;
   padding: 20px;
   cursor: pointer;
+}
+.header .header__body {
+  background-color: #020202;
+}
+.header .header__body .header__body__h1 {
+  color: white;
+}
+.header .header__body .header__body__img {
+  width: 500px;
+  height: 500px;
 }
 
 .projects {
