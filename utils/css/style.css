@@ -1,4 +1,4 @@
-.header .header__body, .header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top {
+.header .header__body .container--header-body, .header .header__top .header__top__nav .header__top__nav__li a, .header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,13 +17,15 @@
 
 .header {
   outline: 1px solid red;
+  position: relative;
 }
 .header .header__top {
-  outline: 1px solid hotpink;
   width: inherit;
   max-width: inherit;
   height: 60px;
   justify-content: space-between;
+  position: absolute;
+  z-index: 3;
 }
 .header .header__top .header__top__figure {
   outline: 1px solid indigo;
@@ -41,18 +43,39 @@
 }
 .header .header__top .header__top__nav .header__top__nav__li a {
   text-decoration: none;
-  padding: 20px;
+  margin: 0 20px;
   cursor: pointer;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: center;
 }
 .header .header__body {
   background-color: #020202;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  position: relative;
 }
-.header .header__body .header__body__h1 {
+.header .header__body .container--header-body {
+  overflow: none;
+}
+.header .header__body .container--header-body .header__body__h1 {
   color: white;
+  grid-column: 1/2;
+  position: absolute;
+  margin: 0 50px;
+  z-index: 2;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 50px;
 }
-.header .header__body .header__body__img {
-  width: 500px;
-  height: 500px;
+.header .header__body .container--header-body .header__body__img {
+  grid-template-rows: 2/3;
+  width: 715px;
+  height: 750px;
+  overflow: none;
+  position: absolute;
+  z-index: 1;
 }
 
 .projects {
