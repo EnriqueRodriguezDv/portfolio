@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./utils/images/logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Kranky&family=Permanent+Marker&family=Playfair+Display&family=Tangerine:wght@700&display=swap" rel="stylesheet">    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./utils/css/style.css">
     <title>Enrique Rodríguez</title>
 </head>
-<body>
-    <header class="header">
+<body onkeyup="scrollKey()">
+    <header class="header" id="header">
         <div class="header__top">
             <figure class="header__top__figure">
                 <img class="header__top__figure--logo" src="./utils/images/logo.png" alt="">
@@ -35,13 +35,10 @@
                 <img class="header__body__img" src="./utils/images/foto-fondo.png" alt="">
             </div>
         </div>
-        <figure class="header__figure">
-            <img class="header__figure__img" src="https://img.icons8.com/nolan/64/sort-down--v1.png"/>
-        </figure>
     </header>
 
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h1 class="projects--title">Projects</h1>
         <article class="projects__one">
             <h2 class="projects__one__h2">Spaceship VS</h2>
@@ -76,8 +73,19 @@
         </article>
     </section>
 
-    <section class="education">
-        <h1 class="education--title">Education</h1>
+    <section class="education" id="education">
+        <article class="education__code">
+            <h1 class="education__code--title">Education</h1>
+            <div class="education__code--program">
+                <p>HTML</p>
+                <p>Css</p>
+                <p>Javascript</p>
+                <p>Data Base</p>
+                <p>Arduino</p>
+                <p>Communication</p>
+                <p>Others</p>
+            </div>
+        </article>
         <article class="education__dev">
             <div class="education__dev__html">
                 <img class="education__dev__html__img" src="./utils/images/html.png" alt="">
@@ -109,84 +117,26 @@
             <div class="education__dev__git">
                 <img class="education__dev__git__img" src="./utils/images/git-logo.png" alt="">
             </div>
-            <div class="education__dev__others">
-                <img class="education__dev__others__img" src="./utils/images/others.png" alt="">
-            </div>
-        </article>
-        <article class="education__courses">
-            <div class="education__courses__div others">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/ingenieria.png" alt="">
-            </div>
-            <div class="education__courses__div html css">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/introduccionDesarrollo.png" alt="">
-            </div>
-            <div class="education__courses__div html css js arduino johnny-five node">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/programacionBasica.png" alt="">
-            </div>
-            <div class="education__courses__div terminal">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/terminalbasico.png" alt="">
-            </div>
-            <div class="education__courses__div sql">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/baseDatos.png" alt="">
-            </div>
-            <div class="education__courses__div sql">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/baseDatos.png" alt="">
-            </div>
-            <div class="education__courses__div js">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/basicoJavascript.png" alt="">
-            </div>
-            <div class="education__courses__div git">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/git.png" alt="">
-            </div>
-            <div class="education__courses__div html css">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/webOnline.png" alt="">
-            </div>
-            <div class="education__courses__div html css">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/responsiveDesigned.png" alt="">
-            </div>
-            <div class="education__courses__div terminal js node">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/preworks.png" alt="">
-            </div>
-            <div class="education__courses__div sql terminal">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/sql.png" alt="">
-            </div>
-            <div class="education__courses__div html css js sass terminal">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/frontend.png" alt="">
-            </div>
-            <div class="education__courses__div js node">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/fundamentosJs.png" alt="">
-            </div>
-            <div class="education__courses__div html js">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/asincronismo.png" alt="">
-            </div>
-            <div class="education__courses__div html js">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/ecmascript.png" alt="">
-            </div>
-            <div class="education__courses__div html js node typescript">
-                <h3 class="education__courses__div__h3"></h3>
-                <img class="education__courses__div__img" src="./utils/images/profesionalJs.png" alt="">
-            </div>
         </article>
     </section>
 
-    <footer>
-        <a href="https://icons8.com/icon/49477/clasificar-abajo">Icon by Icons8</a>
+    <footer class="footer" id="footer">
+        <div class="footer__contacts">
+            <h1 class="footer__contacts--title">Contacts</h1>
+            <div class="footer__contacts--red">
+                <img src="https://i.pinimg.com/originals/58/f4/72/58f4723d8f23906bdcb058604075ad2a.png" alt="">
+                <img src="./utils/images/git-logo.png" alt="">
+                <img src="https://pluspng.com/img-png/linkedin-png-256x256-px-linkedin-logo-png-download-256.png" alt="">
+            </div>
+            <div class="footer__contact--email">
+                <p>Want you work whit me? Send me you email</p>
+                <div class="footer__contact--email--send">
+                    <input class="email" type="email">
+                    <input class="button" type="button" value="Send">
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="./assets/index.js"></script>
 </body>
 </html> 

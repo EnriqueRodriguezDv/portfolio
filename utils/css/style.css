@@ -1,4 +1,4 @@
-.education .education__courses, .projects .projects--title, .header .header__body .container--header-body, .header .header__top .header__top__nav .header__top__nav__li a, .header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top {
+.footer .footer__contacts .footer__contact--email, .footer .footer__contacts .footer__contacts--red, .footer .footer__contacts, .education .education__dev, .education .education__code, .education, .projects .projects--title, .header .header__body .container--header-body, .header .header__top .header__top__nav .header__top__nav__li a, .header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +13,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  overflow: hidden;
 }
 
 .header {
@@ -55,9 +59,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   position: relative;
-}
-.header .header__body .container--header-body {
-  overflow: none;
+  overflow: hidden;
 }
 .header .header__body .container--header-body .header__body__h1 {
   color: white;
@@ -76,23 +78,13 @@
   position: absolute;
   z-index: 1;
 }
-.header .header__figure__img {
-  position: absolute;
-  bottom: 0;
-  left: 48%;
-  z-index: 1;
-}
-.header .header__figure__img:hover {
-  cursor: pointer;
-}
 
 .projects {
-  outline: 1px solid green;
   display: grid;
   grid-template-rows: repeat(10, 10%);
   grid-template-columns: repeat(10, 10%);
   font-family: "Indie Flower", cursive;
-  background-image: url("../images/pintura.png");
+  background-image: url("../images/pintura.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -179,81 +171,104 @@
 }
 
 .education {
-  width: 100%;
   height: 100vh;
-  display: grid;
-  grid-template-columns: 75% 25%;
-  grid-template-rows: 7% 93%;
+  position: relative;
+  font-family: "Tangerine", cursive;
+  font-size: 58px;
+  background-image: url(https://i.pinimg.com/originals/39/2a/18/392a18f48f364f2d7e80606d2221eb50.jpg);
+  background-repeat: no-repeat;
+  background-size: 150%;
+  background-position-x: center;
 }
-.education .education--title {
-  grid-column: 1/2;
+.education .education__code {
+  flex-direction: column;
+  width: 70%;
+  margin-right: 10%;
+  color: #D7D7D7;
+}
+.education .education__code .education__code--title {
+  position: absolute;
+  top: 50px;
+  left: 45%;
+}
+.education .education__code .education__code--program {
+  width: 50%;
+}
+.education .education__code .education__code--program p {
+  width: inherit;
+  padding: 30px;
+  padding-right: 50%;
+  font-size: 25px;
+  margin-right: 10%;
+  font-family: "Gloria Hallelujah", cursive;
 }
 .education .education__dev {
-  grid-column: 2/3;
-  grid-row: 1/3;
-  background-color: lightslategray;
-  display: grid;
-  grid-template-columns: repeat(3, 33.3%);
-  grid-template-rows: repeat(8, 12.5%);
+  width: 30%;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50px;
+  margin-right: 20px;
 }
 .education .education__dev img {
   width: 100px;
   height: 100px;
+  margin: 15px;
 }
-.education .education__dev .education__dev__html {
-  grid-column: 2/3;
-  grid-row: 1/2;
+.education .education__dev .education__dev__sql__img {
+  height: 70px;
 }
-.education .education__dev .education__dev__css {
-  grid-column: 1/2;
-  grid-row: 2/3;
+
+.footer {
+  height: 100vh;
+  background-image: url(https://i2.wp.com/mbcgroup.co/wp-content/uploads/2019/02/Contact-us-2.jpg?ssl=1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #B4DFE3;
+  background-position: bottom;
+  color: #4C76A2;
 }
-.education .education__dev .education__dev__sass {
-  grid-column: 3/4;
-  grid-row: 2/3;
+.footer .footer__contacts {
+  width: 70%;
+  height: 80%;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
-.education .education__dev .education__dev__js {
-  grid-column: 2/3;
-  grid-row: 3/4;
+.footer .footer__contacts .footer__contacts--title {
+  font-size: 50px;
+  font-family: "Permanent Marker", cursive;
 }
-.education .education__dev .education__dev__node {
-  grid-column: 1/2;
-  grid-row: 4/5;
+.footer .footer__contacts .footer__contacts--red {
+  width: 50%;
+  justify-content: space-between;
 }
-.education .education__dev .education__dev__typescript {
-  grid-column: 3/4;
-  grid-row: 4/5;
+.footer .footer__contacts .footer__contacts--red img {
+  width: 150px;
+  height: 150px;
 }
-.education .education__dev .education__dev__arduino {
-  grid-column: 1/2;
-  grid-row: 6/7;
+.footer .footer__contacts .footer__contact--email {
+  flex-direction: column;
 }
-.education .education__dev .education__dev__johnny-five {
-  grid-column: 3/4;
-  grid-row: 6/7;
+.footer .footer__contacts .footer__contact--email p {
+  font-size: 21px;
+  font-family: "Indie Flower", cursive;
 }
-.education .education__dev .education__dev__sql {
-  grid-column: 2/3;
-  grid-row: 5/6;
+.footer .footer__contacts .footer__contact--email .button, .footer .footer__contacts .footer__contact--email .email {
+  padding: 7px;
+  border-radius: 20px;
+  margin: 8px;
+  outline: none;
 }
-.education .education__dev .education__dev__git {
-  grid-column: 1/2;
-  grid-row: 8/9;
+.footer .footer__contacts .footer__contact--email .email {
+  width: 200px;
+  font-family: "Indie Flower", cursive;
 }
-.education .education__dev .education__dev__others {
-  grid-column: 3/4;
-  grid-row: 8/9;
+.footer .footer__contacts .footer__contact--email .button {
+  font-family: "Indie Flower", cursive;
+  padding: 8px 15px;
 }
-.education .education__courses {
-  background-color: lightyellow;
-  grid-column: 1/2;
-  grid-row: 2/3;
-  flex-wrap: wrap;
-}
-.education .education__courses img {
-  margin: 10px;
-  width: 130px;
-  height: 100px;
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
