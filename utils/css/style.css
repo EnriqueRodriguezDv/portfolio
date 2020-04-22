@@ -1,4 +1,4 @@
-.footer .footer__contacts .footer__contact--email, .footer .footer__contacts .footer__contacts--red, .footer .footer__contacts, .education .education__dev, .education .education__code, .education, .projects .projects--title, .header .header__body .container--header-body, .header .header__top .header__top__nav .header__top__nav__li a, .header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top {
+.footer .footer__contacts .footer__contact--email, .footer .footer__contacts .footer__contacts--red, .footer .footer__contacts, .education .education__dev, .education .education__code, .education, .projects .projects--title, .header .header__body .container--header-body, .header .header__top .header__top__nav .header__top__nav__li p, .header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top, .nav p, .nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +21,72 @@ html {
 
 body {
   overflow: hidden;
+}
+
+.nav {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  color: white;
+  z-index: 10;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.nav p {
+  margin: 2px 0px;
+  width: 20px;
+}
+.nav .nav--header {
+  font-size: 30px;
+  position: relative;
+}
+.nav .nav--header span {
+  position: absolute;
+  left: -150px;
+  transition: 0.7s;
+}
+.nav .nav--header:hover span {
+  position: absolute;
+  left: 20px;
+}
+.nav .nav--projects {
+  font-size: 24px;
+}
+.nav .nav--projects span {
+  position: absolute;
+  left: -150px;
+  transition: 0.7s;
+}
+.nav .nav--projects:hover span {
+  position: absolute;
+  left: 20px;
+}
+.nav .nav--education {
+  font-size: 18px;
+}
+.nav .nav--education span {
+  position: absolute;
+  left: -150px;
+  transition: 0.7s;
+}
+.nav .nav--education:hover span {
+  position: absolute;
+  left: 20px;
+}
+.nav .nav--contact {
+  font-size: 15px;
+}
+.nav .nav--contact span {
+  position: absolute;
+  left: -150px;
+  transition: 0.7s;
+}
+.nav .nav--contact:hover span {
+  position: absolute;
+  left: 20px;
 }
 
 .header {
@@ -48,13 +114,16 @@ body {
   margin-right: 10px;
   list-style: none;
 }
-.header .header__top .header__top__nav .header__top__nav__li a {
-  text-decoration: none;
+.header .header__top .header__top__nav .header__top__nav__li p {
   margin: 0 20px;
   cursor: pointer;
   color: white;
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
+  transition: 0.5s;
+}
+.header .header__top .header__top__nav .header__top__nav__li p:hover {
+  font-size: 20px;
 }
 .header .header__body {
   background-color: #020202;

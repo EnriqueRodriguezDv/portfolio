@@ -5,10 +5,14 @@ class Scroll{
         this.projects = config.thisProjects;
         this.education = config.thisEducation;
         this.footer = config.thisFooter;
+        this.navProjects = config.thisNavProjects;
+        this.navEducation = config.thisNavEducation;
+        this.navContact = config.thisNavContact;
         this.number = 1;
         this.scrollKey();
         this.scrollMouse();
-        // console.log(this.header, this.projects, this.education, this.footer)
+        this.nav();
+        // console.log(this.navEducation, this.navContact)
     }
     
     scrollKey(){
@@ -37,31 +41,34 @@ class Scroll{
         }
     }
 
+    nav(){
+        this.navProjects.onclick = () => {
+            this.number = 2;
+            this.viewport();
+        }
+        this.navEducation.onclick = () => {
+            this.number = 3;
+            this.viewport();
+        }
+        this.navContact.onclick = () => {
+            this.number = 4;
+            this.viewport();
+        }
+    }
+
     viewport(){
         switch(this.number){
             case 1:
-                this.header.classList.remove("hidden");
-                this.projects.classList.add("hidden");
-                this.education.classList.add("hidden");
-                this.footer.classList.add("hidden");
+                window.scrollTo(0,0)
             break
             case 2:
-                this.header.classList.add("hidden");
-                this.projects.classList.remove("hidden");
-                this.education.classList.add("hidden");
-                this.footer.classList.add("hidden");
+                window.scrollTo(0,innerHeight)
             break
             case 3:
-                this.header.classList.add("hidden");
-                this.projects.classList.add("hidden");
-                this.education.classList.remove("hidden");
-                this.footer.classList.add("hidden");
+                window.scrollTo(0,innerHeight * 2)
             break
             case 4:
-                this.header.classList.add("hidden");
-                this.projects.classList.add("hidden");
-                this.education.classList.add("hidden");
-                this.footer.classList.remove("hidden");
+                window.scrollTo(0,innerHeight * 3)
             break
         }
     }
