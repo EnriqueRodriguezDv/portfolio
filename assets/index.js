@@ -1,23 +1,14 @@
-import Scroll from './plugins/scroll.js'
+import Nav from './plugin/Nav.js'
 
-const body = document.getElementById("body")
-const header = document.getElementById("header");
-const projects = document.getElementById("projects");
-const education = document.getElementById("education");
-const footer = document.getElementById("footer");
-const navProjects = document.getElementById("navProjects");
-const navEducation = document.getElementById("navEducation");
-const navContact = document.getElementById("navContact");
+const headNav = {
+    headNavProject: new Nav("navProjects", 1),
+    headNavEducation: new Nav("navEducation", 2),
+    headNavContact: new Nav("navContact", 3),
+}
 
-
-new Scroll({
-    thisBody: body,
-    thisHeader: header,
-    thisProjects: projects,
-    thisEducation: education,
-    thisFooter: footer,
-    thisNavProjects: navProjects,
-    thisNavEducation: navEducation,
-    thisNavContact: navContact
-})
-
+const globalNav = {
+    globalNavHeader: new Nav("globalNavHeader", 0),
+    globalNavProject: new Nav("globalNavProject", 1),
+    globalNavEducation: new Nav("globalNavEducation", 2),
+    globalNavContact: new Nav("globalNavContact", 3)
+}

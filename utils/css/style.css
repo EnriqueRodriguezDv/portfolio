@@ -1,4 +1,4 @@
-.footer .footer__contacts .footer__contact--email, .footer .footer__contacts .footer__contacts--red, .footer .footer__contacts, .education .education__dev, .education .education__code, .education, .projects .projects--title, .header .header__body .container--header-body, .header .header__top .header__top__nav .header__top__nav__li p, .header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top, .nav p, .nav {
+.footer .footer__contacts .footer__contact--email, .footer .footer__contacts .footer__contacts--red, .footer .footer__contacts, .education .education__dev, .education .education__code, .education, .projects .projects--title, .header .header__body .container--header-body, .header .header__top .header__top__nav .header__top__nav__li p, .header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top, .nav a, .nav a .point--contact, .nav a .point--education, .nav a .point--projects, .nav a .point--header, .nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,57 +35,23 @@ body {
   margin-left: 10px;
   cursor: pointer;
 }
-.nav p {
+.nav a .point--contact, .nav a .point--education, .nav a .point--projects, .nav a .point--header {
   margin: 2px 0px;
-  width: 20px;
-}
-.nav .nav--header {
+  width: 30px;
+  cursor: pointer;
   font-size: 30px;
+}
+.nav a .point--contact--title, .nav a .point--education--title, .nav a .point--projects--title, .nav a .point--header--title {
+  position: absolute;
+  left: -150px;
+  transition: 0.7s;
+  cursor: pointer;
+  font-size: 25px;
+}
+.nav a {
   position: relative;
 }
-.nav .nav--header span {
-  position: absolute;
-  left: -150px;
-  transition: 0.7s;
-}
-.nav .nav--header:hover span {
-  position: absolute;
-  left: 20px;
-}
-.nav .nav--projects {
-  font-size: 24px;
-}
-.nav .nav--projects span {
-  position: absolute;
-  left: -150px;
-  transition: 0.7s;
-}
-.nav .nav--projects:hover span {
-  position: absolute;
-  left: 20px;
-}
-.nav .nav--education {
-  font-size: 18px;
-}
-.nav .nav--education span {
-  position: absolute;
-  left: -150px;
-  transition: 0.7s;
-}
-.nav .nav--education:hover span {
-  position: absolute;
-  left: 20px;
-}
-.nav .nav--contact {
-  font-size: 15px;
-}
-.nav .nav--contact span {
-  position: absolute;
-  left: -150px;
-  transition: 0.7s;
-}
-.nav .nav--contact:hover span {
-  position: absolute;
+.nav a:hover span {
   left: 20px;
 }
 
@@ -168,13 +134,29 @@ body {
 .projects .projects__four, .projects .projects__three, .projects .projects__two, .projects .projects__one {
   border-radius: 20px;
   margin: 1px;
-  padding: 5px;
+  transition: 2s;
+  cursor: pointer;
+}
+.projects .projects__four div, .projects .projects__three div, .projects .projects__two div, .projects .projects__one div {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  height: 100%;
+  background: radial-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.3));
+  border-radius: 20px;
+  padding: 0px 5px;
 }
 .projects .projects__four h2, .projects .projects__three h2, .projects .projects__two h2, .projects .projects__one h2 {
   font-family: "Russo One", sans-serif;
+}
+.projects .projects__four .projects__four__h3 span, .projects .projects__three .projects__three__h3 span, .projects .projects__two .projects__two__h3 span, .projects .projects__one .projects__one__h3 span {
+  visibility: hidden;
+}
+.projects .projects__four:hover, .projects .projects__three:hover, .projects .projects__two:hover, .projects .projects__one:hover {
+  transform: scale(1.5);
+}
+.projects .projects__four:hover span, .projects .projects__three:hover span, .projects .projects__two:hover span, .projects .projects__one:hover span {
+  visibility: visible;
 }
 .projects .projects__one {
   grid-column: 3/6;
@@ -235,14 +217,17 @@ body {
   grid-column: 6/9;
   grid-row: 7/9;
   background-color: lightseagreen;
+}
+.projects .projects__four .project__four__div {
   flex-direction: row-reverse;
+  justify-content: center;
   align-items: center;
 }
 .projects .projects__four .projects__four__figure__img {
+  box-sizing: border-box;
   width: 100px;
   height: 100px;
 }
-
 .education {
   height: 100vh;
   position: relative;
@@ -274,6 +259,10 @@ body {
   font-size: 25px;
   margin-right: 10%;
   font-family: "Gloria Hallelujah", cursive;
+  cursor: pointer;
+}
+.education .education__code .education__code--program p:hover {
+  text-decoration: line-through;
 }
 .education .education__dev {
   width: 30%;
@@ -313,6 +302,7 @@ body {
 .footer .footer__contacts .footer__contacts--red {
   width: 50%;
   justify-content: space-between;
+  cursor: pointer;
 }
 .footer .footer__contacts .footer__contacts--red img {
   width: 150px;
@@ -338,6 +328,7 @@ body {
 .footer .footer__contacts .footer__contact--email .button {
   font-family: "Indie Flower", cursive;
   padding: 8px 15px;
+  cursor: pointer;
 }
 
 .hidden {

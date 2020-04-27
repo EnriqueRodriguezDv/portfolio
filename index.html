@@ -11,10 +11,10 @@
 </head>
 <body id="body">
     <nav class="nav">
-        <p class="nav--header">·<span> Header</span></p>
-        <p class="nav--projects">·<span> Projects</span></p>
-        <p class="nav--education">·<span> Education</span></p>
-        <p class="nav--contact">·<span> Contact</span></p>
+        <a id="globalNavHeader" class="nav--header"><p class="point--header">·</p><span class="point--header--title"> Header</span></a>
+        <a id="globalNavProject" class="nav--projects"><p class="point--projects">·</p><span class="point--projects--title"> Projects</span></a>
+        <a id="globalNavEducation" class="nav--education"><p class="point--education">·</p><span class="point--education--title"> Education</span></a>
+        <a id="globalNavContact" class="nav--contact"><p class="point--contact">·</p><span class="point--contact--title"> Contact</span></a>
     </nav>
     <header class="header" id="header">
         <div class="header__top">
@@ -22,13 +22,13 @@
                 <img class="header__top__figure--logo" src="./utils/images/logo.png" alt="">
             </figure>       
             <ul class="header__top__nav">
-                <li class="header__top__nav__li">
+                <li id="headNavProject" class="header__top__nav__li">
                     <p class="header__top__nav__li--projects" id="navProjects">Projects</p>
                 </li>
-                <li class="header__top__nav__li">
+                <li id="HeadNavEducation" class="header__top__nav__li">
                     <p class="header__top__nav__li--about-me" id="navEducation">About me</p>
                 </li>
-                <li class="header__top__nav__li">
+                <li id="HeadNavContact" class="header__top__nav__li">
                     <p class="header__top__nav__li--contact" id="navContact">Contact</p>
                 </li>
             </ul>
@@ -43,39 +43,46 @@
         </div>
     </header>
 
-
     <section class="projects" id="projects">
         <h1 class="projects--title">Projects</h1>
         <article class="projects__one">
-            <h2 class="projects__one__h2">Spaceship VS</h2>
-            <figure class="projects__one__figure">
-                <img class="projects__one__figure__img" src="./utils/images/nave.png" alt="">
-            </figure>
-            <h3 class="projects__one__h3"><span>It´s a little</span> game for two players <span>when you can destroy a your friend or... enemy</span></h3>
+            <div>
+                <h2 class="projects__one__h2">Spaceship VS</h2>
+                <figure class="projects__one__figure">
+                    <img class="projects__one__figure__img" src="./utils/images/nave.png" alt="">
+                </figure>
+                <h3 class="projects__one__h3"><span>It´s a little</span> game for two players <span>when you can destroy a your friend or... enemy</span></h3>
+            </div>
         </article>
 
         <article class="projects__two">
-            <figure class="projects__two__figure">
-                <img class="projects__two__figure__img" src="./utils/images/papel.png" alt="">
-            </figure>
-            <h2 class="projects__two__h2">Rock Paper Scissor</h2>
-            <h3 class="projects__two__h3">The typical game<span>, soon, rock, paper, scissor, lizard, spock 🖖</span></h3>
+            <div>
+                <figure class="projects__two__figure">
+                    <img class="projects__two__figure__img" src="./utils/images/papel.png" alt="">
+                </figure>
+                <h2 class="projects__two__h2">Rock Paper Scissor</h2>
+                <h3 class="projects__two__h3">The typical game<span>, soon, rock, paper, scissor, lizard, spock 🖖</span></h3>
+            </div>
         </article>
 
         <article class="projects__three">
-            <h2 class="projects__two__h2">Character sheet D&D</h2>
-            <h3 class="projects__three__h3"><span>Esta vez en español, </span>hoja de personajes de D&D<span> ayudas para hacer tu personaje más rápido</span></h3>
-                <figure class="projects__three__figure">
-                    <img class="projects__three__figure__img" src="./utils/images/dragon.png" alt="">
-                </figure>
+            <div>
+                <h2 class="projects__two__h2">Character sheet D&D</h2>
+                <h3 class="projects__three__h3"><span>Esta vez en español, </span>hoja de personajes de D&D<span> ayudas para hacer tu personaje más rápido</span></h3>
+                    <figure class="projects__three__figure">
+                        <img class="projects__three__figure__img" src="./utils/images/dragon.png" alt="">
+                    </figure>
+            </div>
         </article>
 
         <article class="projects__four">
-            <h3 class="projects__four__h3"><span>Other </span>project to practice <span>what i have learned</span></h3>
-            <figure class="projects__four__figure">
-                <img class="projects__four__figure__img" src="./utils/images/raiz.png" alt="">
-            </figure>
-            <h2 class="projects__four__h2">Other Projects</h2>
+            <div class="project__four__div">
+                <h3 class="projects__four__h3"><span>Other </span>project to practice <span>what i have learned</span></h3>
+                <figure class="projects__four__figure">
+                    <img class="projects__four__figure__img" src="./utils/images/raiz.png" alt="">
+                </figure>
+                <h2 class="projects__four__h2">Other Projects</h2>
+            </div>
         </article>
     </section>
 
@@ -122,6 +129,9 @@
             </div>
             <div class="education__dev__git">
                 <img class="education__dev__git__img" src="./utils/images/git-logo.png" alt="">
+            </div>
+            <div class="education__dev__uml">
+                <img class="education__dev__git__img" src="https://image.winudf.com/v2/image/dXRuZy5yb21hbi5hcHAudW1sX2ljb25fMF9hYzNmZGY5OQ/icon.png?w=170&fakeurl=1" alt="">
             </div>
         </article>
     </section>
