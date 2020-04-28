@@ -1,4 +1,4 @@
-.footer .footer__contacts .footer__contact--email, .footer .footer__contacts .footer__contacts--red, .footer .footer__contacts, .education .education__dev, .education .education__code, .education, .projects .projects--title, .header .header__body .container--header-body, .header .header__top .header__top__nav .header__top__nav__li p, .header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top, .nav a, .nav a .point--contact, .nav a .point--education, .nav a .point--projects, .nav a .point--header, .nav {
+.footer .footer__contacts .footer__contact--email, .footer .footer__contacts .footer__contacts--red, .footer .footer__contacts, .education .education__dev, .education .education__code, .education, .projects .projects__one .projects__one__figure, .projects .projects--title, .header .header__body .container--header-body, .header .header__top .header__top__nav .header__top__nav__li p, .header .header__top .header__top__nav, .header .header__top .header__top__figure, .header .header__top, .nav a, .nav a .point--contact, .nav a .point--education, .nav a .point--projects, .nav a .point--header, .nav {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -134,7 +134,7 @@ body {
 .projects .projects__four, .projects .projects__three, .projects .projects__two, .projects .projects__one {
   border-radius: 20px;
   margin: 1px;
-  transition: 2s;
+  transition: 1s;
   cursor: pointer;
 }
 .projects .projects__four div, .projects .projects__three div, .projects .projects__two div, .projects .projects__one div {
@@ -154,6 +154,7 @@ body {
 }
 .projects .projects__four:hover, .projects .projects__three:hover, .projects .projects__two:hover, .projects .projects__one:hover {
   transform: scale(1.5);
+  z-index: 10;
 }
 .projects .projects__four:hover span, .projects .projects__three:hover span, .projects .projects__two:hover span, .projects .projects__one:hover span {
   visibility: visible;
@@ -167,10 +168,17 @@ body {
   text-align: right;
   margin-right: 10px;
 }
+.projects .projects__one .projects__one__figure {
+  justify-content: start;
+}
 .projects .projects__one .projects__one__figure__img {
   width: 50px;
   height: 50px;
   margin-left: 10px;
+}
+.projects .projects__one .projects__one__figure__img--two {
+  width: 65px;
+  height: 45px;
 }
 .projects .projects__one .projects__one__h3 {
   text-align: right;

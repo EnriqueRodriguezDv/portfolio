@@ -1,6 +1,6 @@
 class Nav{
     constructor(element, number){
-        this.url = document.getElementById(element).addEventListener("click", this.move.bind(this))
+        document.getElementById(element).addEventListener("click", this.move.bind(this))
         this.position = number;
     }
 
