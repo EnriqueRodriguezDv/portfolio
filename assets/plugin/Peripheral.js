@@ -15,6 +15,9 @@ class Peripheral{
             case 2:
                 itsATramp = event.deltaY
             break;
+            case 3:
+                console.log(event)
+            break;
         }
         this.move(itsATramp);
     }

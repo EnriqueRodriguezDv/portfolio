@@ -12,7 +12,7 @@ class ChangeImg extends Animation{
         this.elementHtmlAnimated.classList.add("hidden");
         this.elementHtmlAnimatedToChange.classList.remove("hidden");
     }
-
+    
     changeOut(){
         this.elementHtmlAnimated.classList.remove("hidden");
         this.elementHtmlAnimatedToChange.classList.add("hidden");

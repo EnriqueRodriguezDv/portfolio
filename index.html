@@ -93,48 +93,50 @@
         <article class="education__code">
             <h1 class="education__code--title">Education</h1>
             <div class="education__code--program">
-                <p>HTML</p>
-                <p>Css</p>
-                <p>Javascript</p>
-                <p>Data Base</p>
-                <p>Arduino</p>
-                <p>Communication</p>
-                <p>Others</p>
+                <p id="html">HTML</p>
+                <p id="css">Css</p>
+                <p id="javascript">Javascript</p>
+                <p id="dataBase">Data Base</p>
+                <p id="arduino">Arduino</p>
+                <p id="communication">Communication</p>
             </div>
         </article>
         <article class="education__dev">
             <div class="education__dev__html">
-                <img class="education__dev__html__img" src="./utils/images/html.png" alt="">
+                <img class="education__dev__html__img html hidden" src="./utils/images/html.png" alt="">
             </div>
             <div class="education__dev__css">
-                <img class="education__dev__css__img" src="./utils/images/css.png" alt="">
+                <img class="education__dev__css__img css hidden" src="./utils/images/css.png" alt="">
             </div>
             <div class="education__dev__sass">
-                <img class="education__dev__sass__img" src="./utils/images/sass.png" alt="">
+                <img class="education__dev__sass__img css hidden" src="./utils/images/sass.png" alt="">
             </div>
             <div class="education__dev__js">
-                <img class="education__dev__js__img" src="./utils/images/js.png" alt="">
+                <img class="education__dev__js__img javascript hidden" src="./utils/images/js.png" alt="">
             </div>
             <div class="education__dev__typescript">
-                <img class="education__dev__typescript__img" src="./utils/images/typescript.png" alt="">
+                <img class="education__dev__typescript__img javascript hidden" src="./utils/images/typescript.png" alt="">
             </div>
             <div class="education__dev__node">
-                <img class="education__dev__node__img" src="./utils/images/node.png" alt="">
+                <img class="education__dev__node__img javascript hidden" src="./utils/images/node.png" alt="">
             </div>
             <div class="education__dev__johnny-five">
-                <img class="education__dev__johnny-five__img" src="./utils/images/j5-logo.svg" alt="">
+                <img class="education__dev__johnny-five__img javascript hidden" src="./utils/images/j5-logo.svg" alt="">
             </div>
             <div class="education__dev__arduino">
-                <img class="education__dev__arduino__img" src="./utils/images/arduino.png" alt="">
+                <img class="education__dev__arduino__img arduino hidden" src="./utils/images/arduino.png" alt="">
             </div>
             <div class="education__dev__sql">
-                <img class="education__dev__sql__img" src="./utils/images/sql-logo.png" alt="">
+                <img class="education__dev__sql__img dataBase hidden" src="./utils/images/sql-logo.png" alt="">
+            </div>
+            <div class="education__dev__mysql">
+                <img class="education__dev__mysql__img dataBase hidden" src="./utils/images/mysql.png" alt="">
             </div>
             <div class="education__dev__git">
-                <img class="education__dev__git__img" src="./utils/images/git-logo.png" alt="">
+                <img class="education__dev__git__img communication other hidden" src="./utils/images/git-logo.png" alt="">
             </div>
             <div class="education__dev__uml">
-                <img class="education__dev__git__img" src="https://image.winudf.com/v2/image/dXRuZy5yb21hbi5hcHAudW1sX2ljb25fMF9hYzNmZGY5OQ/icon.png?w=170&fakeurl=1" alt="">
+                <img class="education__dev__git__img communication other hidden" src="https://image.winudf.com/v2/image/dXRuZy5yb21hbi5hcHAudW1sX2ljb25fMF9hYzNmZGY5OQ/icon.png?w=170&fakeurl=1" alt="">
             </div>
         </article>
     </section>
@@ -148,10 +150,9 @@
                 <img src="https://pluspng.com/img-png/linkedin-png-256x256-px-linkedin-logo-png-download-256.png" alt="">
             </div>
             <div class="footer__contact--email">
-                <p>Want you work whit me? Send me you email</p>
+                <p>Want you work whit me? Send me a email</p>
                 <div class="footer__contact--email--send">
-                    <input class="email" type="email">
-                    <input class="button" type="button" value="Send">
+                    <input id="send" class="button" type="button" value="Send email">
                 </div>
             </div>
         </div>
