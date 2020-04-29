@@ -3,9 +3,7 @@ class Animation{
         this.elementHtmlHover = document.getElementById(elementHtmlHover);
         this.elementHtmlAnimated = document.getElementById(elementHtmlAnimated);
         this.caseEventAnimation = eventAnimation;
-        // this.urlImage = urlImage;
         this.elementHtmlHover.addEventListener("mouseenter", this.selectAnimation.bind(this));
-        console.log(this.elementHtmlHover);
     }
 
     selectAnimation(){
