@@ -218,6 +218,10 @@ body {
   width: 100px;
   height: 100px;
 }
+.projects .projects__three .projects__three__figure .projects__three__figure__img--complete {
+  width: 220px;
+  height: 120px;
+}
 .projects .projects__three .projects__three__h3 {
   text-align: right;
 }

@@ -1,5 +1,6 @@
 import Nav from './plugin/Nav.js'
 import Peripheral from './plugin/Peripheral.js'
+import ChangeImg from './plugin/animations/ChangeImg.js'
 import Animation from './plugin/Animation.js'
 
 // Nav(id, 0:header 1:projects 2:Education 3:Contact)
@@ -24,6 +25,12 @@ const keyboardAndMouse = {
 
 
 const animationWork = {
-    projectOne: new Animation("projectOne", "lightning", 1, null),
-    projectTwo: new Animation("projectTwo", "paper", 2, null),
+    projectOne: new Animation("projectOne", "lightning", 1),
+    projectTwo: new Animation("projectTwo", "paper", 2),
+}
+
+
+const animationChangeImg = {
+    projectThree: new ChangeImg("projectThree", "dyd", "dydComplete"),
+    projectFour: new ChangeImg("projectFour", "raiz", "arbol"),
 }

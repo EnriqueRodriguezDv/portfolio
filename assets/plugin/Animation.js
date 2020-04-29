@@ -1,9 +1,9 @@
 class Animation{
-    constructor(elementHtmlHover, elementHtmlAnimated, eventAnimation, urlImage){
+    constructor(elementHtmlHover, elementHtmlAnimated, eventAnimation){
         this.elementHtmlHover = document.getElementById(elementHtmlHover);
         this.elementHtmlAnimated = document.getElementById(elementHtmlAnimated);
         this.caseEventAnimation = eventAnimation;
-        this.urlImage = urlImage;
+        // this.urlImage = urlImage;
         this.elementHtmlHover.addEventListener("mouseenter", this.selectAnimation.bind(this));
         console.log(this.elementHtmlHover);
     }
@@ -15,9 +15,6 @@ class Animation{
             break;
             case 2: 
                 this.fly()
-            break;
-            case 3:
-                this.changeImg()
             break;
         }
     }
@@ -47,10 +44,6 @@ class Animation{
                 this.elementHtmlAnimated.style.top = -i * movement + movement + "px";
             },time * repeat + time * i)
         }
-    }
-
-    changeImg(){
-
     }
 }
 
