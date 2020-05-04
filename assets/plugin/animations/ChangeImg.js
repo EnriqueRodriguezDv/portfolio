@@ -9,13 +9,13 @@ class ChangeImg extends Animation{
     }
 
     change(){
-        this.elementHtmlAnimated.classList.add("hidden");
-        this.elementHtmlAnimatedToChange.classList.remove("hidden");
+        this.elementHtmlAnimated.style.opacity = 0
+        this.elementHtmlAnimatedToChange.style.opacity = 1
     }
     
     changeOut(){
-        this.elementHtmlAnimated.classList.remove("hidden");
-        this.elementHtmlAnimatedToChange.classList.add("hidden");
+        this.elementHtmlAnimated.style.opacity = 1
+        this.elementHtmlAnimatedToChange.style.opacity = 0
     }
 }
 

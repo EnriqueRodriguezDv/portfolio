@@ -4,9 +4,10 @@ import Animation from './plugin/Animation.js'
 import ChangeImg from './plugin/animations/ChangeImg.js'
 import EducationBox from './plugin/EducationBox.js'
 import Email from './plugin/Email.js'
-
+window.navigator.removeWebWideTrackingException
 // Nav(id, 0:header 1:projects 2:Education 3:Contact)
 const headNav = {
+    headNavHeader: new Nav("navHeader", 0),
     headNavProject: new Nav("navProjects", 1),
     headNavEducation: new Nav("navEducation", 2),
     headNavContact: new Nav("navContact", 3),
@@ -22,7 +23,7 @@ const globalNav = {
 const keyboardAndMouse = {
     keyboard: new Peripheral("keyup", 1, 38, 40),
     wheel: new Peripheral("wheel", 2, -100, 100),
-    touch: new Peripheral("touchstart", 3)
+    touchstart: new Peripheral("touchmove", 3, null, null),
 }
 
 //Animation(Html Container, img to animated, 1:Shoot() 2:fly())
@@ -48,3 +49,6 @@ const educationContainer = {
 }
 
 new Email("send");
+
+const body = document.getElementById("body")
+body.style.maxWidth = innerWidth;

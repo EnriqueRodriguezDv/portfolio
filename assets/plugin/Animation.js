@@ -20,10 +20,16 @@ class Animation{
     shoot(){
         this.elementHtmlAnimated.classList.remove("hidden");
         this.elementHtmlAnimated.style.position = "absolute";
-        for(let i = 0; i < 40; i++){
+        let time = 30;
+        let repeat = 40;
+        for(let i = 0; i < repeat; i++){
             setTimeout( () => {
                 this.elementHtmlAnimated.style.left = (50 + i * 50) + "px";
-            },30 * i)
+            },time * i)
+            setTimeout( () => {
+                this.elementHtmlAnimated.style.position = "initial";
+                this.elementHtmlAnimated.classList.add("hidden");
+            },time * repeat + time * i)
         }
     }
 
@@ -41,6 +47,9 @@ class Animation{
                 this.elementHtmlAnimated.style.right = -i * movement + movement + "px";
                 this.elementHtmlAnimated.style.top = -i * movement + movement + "px";
             },time * repeat + time * i)
+            setTimeout(() => {
+                this.elementHtmlAnimated.style.position = "initial";
+            },time * (2 * repeat) + time * i)
         }
     }
 }
