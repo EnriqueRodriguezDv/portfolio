@@ -3,4 +3,5 @@
 *.jpg
 *.png
 *.jpeg
-*.svg
+
+!pintura.jpg

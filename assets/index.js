@@ -42,12 +42,12 @@ const animationChangeImg = {
 
 //EducationBox(Element and class)
 const educationContainer = {
-    html: new EducationBox("html"),
-    css: new EducationBox("css"),
-    javascript: new EducationBox("javascript"),
-    dataBase: new EducationBox("dataBase"),
-    arduino: new EducationBox("arduino"),
-    communication: new EducationBox("communication"),
+    html: new EducationBox("htmlT", "html"),
+    css: new EducationBox("cssT", "css"),
+    javascript: new EducationBox("javascriptT", "javascript"),
+    dataBase: new EducationBox("dataBaseT", "dataBase"),
+    arduino: new EducationBox("arduinoT", "arduino"),
+    communication: new EducationBox("communicationT" ,"communication"),
 }
 
 new Email("send");
@@ -58,6 +58,7 @@ window.addEventListener("orientationchange", checkScreen)
 const body = document.getElementById("body")
 
 function checkScreen(){
+    headNav
     setTimeout(()=>{
     if(body.scrollHeight / 4 > scrollY && scrollY != 0){
         console.log("1")
