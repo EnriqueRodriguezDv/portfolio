@@ -45,13 +45,13 @@ class Peripheral{
 
     touchmove(){ 
         this.array.push(event.touches[0].pageY)
-        if(this.array[5] < this.array[this.array.length - 1]){
+        if(this.array[7] < this.array[this.array.length - 1]){
             for(let i = 0; i < 4; i++){
                 if(scrollY === this.body.scrollHeight / 4 * i){
                     scrollTo(0, this.body.scrollHeight / 4 * (i - 1))
                 }
             }  
-        } else if (this.array[5] > this.array[this.array.length - 1]){
+        } else if (this.array[7] > this.array[this.array.length - 1]){
             for(let i = 0; i < 4; i++){
                 if(scrollY === this.body.scrollHeight / 4 * i){
                     scrollTo(0, this.body.scrollHeight / 4 * (i + 1))

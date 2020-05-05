@@ -320,6 +320,18 @@ body {
 .education .education__code .education__code--program {
   width: 50%;
 }
+.education .education__code .education__code--program .container--education--code {
+  position: relative;
+}
+.education .education__code .education__code--program .container--education--code div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 0px;
+  transition: 1s;
+  height: 1px;
+}
 .education .education__code .education__code--program p {
   width: 140px;
   padding: 30px;
@@ -329,8 +341,9 @@ body {
   font-family: "Gloria Hallelujah", cursive;
   cursor: pointer;
 }
-.education .education__code .education__code--program p:hover {
-  text-decoration: line-through;
+.education .education__code .education__code--program .container--education--code:hover div {
+  width: 60%;
+  background-color: #D7D7D7;
 }
 .education .education__dev {
   width: 30%;
@@ -501,6 +514,9 @@ body {
   .education .education__code .education__code--title {
     top: 70px;
     left: auto;
+  }
+  .education .education__code .education__code--program .container--education--code:hover div {
+    width: 180%;
   }
   .education .education__code .education__code--program p {
     padding: 10px;

@@ -4,7 +4,9 @@ import Animation from './plugin/Animation.js'
 import ChangeImg from './plugin/animations/ChangeImg.js'
 import EducationBox from './plugin/EducationBox.js'
 import Email from './plugin/Email.js'
-window.navigator.removeWebWideTrackingException
+import ScrollScreen from './plugin/ScrollScreen.js'
+
+// window.navigator.removeWebWideTrackingException
 // Nav(id, 0:header 1:projects 2:Education 3:Contact)
 const headNav = {
     headNavHeader: new Nav("navHeader", 0),
@@ -50,5 +52,29 @@ const educationContainer = {
 
 new Email("send");
 
+new ScrollScreen("body");
+
+window.addEventListener("orientationchange", checkScreen)
 const body = document.getElementById("body")
-body.style.maxWidth = innerWidth;
+
+function checkScreen(){
+    setTimeout(()=>{
+    if(body.scrollHeight / 4 > scrollY && scrollY != 0){
+        console.log("1")
+        scrollTo(0, 0)
+    }
+    if(scrollY < body.scrollHeight / 4 * 2 && body.scrollHeight / 4 < scrollY){
+        console.log("2")
+        scrollTo(0, body.scrollHeight / 4)
+    }
+    if(scrollY < body.scrollHeight / 4 * 3 && body.scrollHeight / 4 * 2 < scrollY){
+        scrollTo(0, body.scrollHeight / 4 * 2)
+        console.log("3")
+    }
+    if(scrollY > body.scrollHeight / 4 * 4){
+        scrollTo(0, body.scrollHeight / 4 * 3)
+        console.log("4")
+    }
+}, 1000)
+}
+
