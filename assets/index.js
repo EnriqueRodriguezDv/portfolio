@@ -5,6 +5,7 @@ import ChangeImg from './plugin/animations/ChangeImg.js'
 import EducationBox from './plugin/EducationBox.js'
 import Email from './plugin/Email.js'
 import ScrollScreen from './plugin/ScrollScreen.js'
+import UrlProject from './plugin/UrlProject.js'
 
 // window.navigator.removeWebWideTrackingException
 // Nav(id, 0:header 1:projects 2:Education 3:Contact)
@@ -40,7 +41,7 @@ const animationChangeImg = {
     projectFour: new ChangeImg("projectFour", "raiz", "arbol"),
 }
 
-//EducationBox(Element and class)
+//EducationBox(Element, class)
 const educationContainer = {
     html: new EducationBox("htmlT", "html"),
     css: new EducationBox("cssT", "css"),
@@ -51,8 +52,14 @@ const educationContainer = {
 }
 
 new Email("send");
-
 new ScrollScreen("body");
+
+//UrlProject(Id of article project, url, time)
+const urls = {
+    projectOneUrl: new UrlProject("projectOne", "https://enriquerodriguezdv.github.io/spaceship/", 1500)
+}
+
+//-------------------------------------------------------------
 
 window.addEventListener("orientationchange", checkScreen)
 const body = document.getElementById("body")

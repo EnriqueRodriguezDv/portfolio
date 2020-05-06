@@ -30,9 +30,6 @@ class Animation{
                 this.elementHtmlAnimated.style.position = "initial";
                 this.elementHtmlAnimated.classList.add("hidden");
             },time * repeat + time * i)
-            setTimeout(()=>{
-                location.href = "https://enriquerodriguezdv.github.io/spaceship/index.html"
-            }, time * repeat + time * i * 2)
         }
     }
 
