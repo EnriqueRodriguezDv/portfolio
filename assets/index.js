@@ -56,7 +56,8 @@ new ScrollScreen("body");
 
 //UrlProject(Id of article project, url, time)
 const urls = {
-    projectOneUrl: new UrlProject("projectOne", "https://enriquerodriguezdv.github.io/spaceship/", 1500)
+    projectOneUrl: new UrlProject("projectOne" ,"https://enriquerodriguezdv.github.io/spaceship/", 1500),
+    projectTwoUrl: new UrlProject("projectTwo" ,"https://enriquerodriguezdv.github.io/piedra.papel.tijera/index.html" ,2000)
 }
 
 //-------------------------------------------------------------
